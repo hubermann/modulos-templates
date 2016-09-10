@@ -1,4 +1,4 @@
-# Base de folders y files para inicio de proyecto con grunt.
+# Modulos base en bootstrap.
 
 
   - dist              // archivos css y js minificados
