@@ -5,8 +5,9 @@
   - ----- css
   - ----- js
   - src              // archivos originales
-  - ----- css
-  - ---------- style.css
+  - pages              // archivos includes con cada modulo
+  - ----- less
+  - ---------- main.less // + cada file.less con el nombre del modulo incluido en main
   - ----- js
   - ---------- main.js
   - vendor          // archivos de terceros (bootstrap, font-awesome, jquery,etc.)
@@ -15,9 +16,17 @@
 
 
 en consola correr:
-
+[default task]
 ```sh
 $ grunt
+```
+[watch task]
+```sh
+$ grunt look
+```
+[minificar css y js task]
+```sh
+$ grunt min
 ```
 
 ##### Gabriel Hubermann | Hubermann.com | Buenosweb.com
