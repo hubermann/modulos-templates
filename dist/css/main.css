@@ -1,0 +1,249 @@
+/*
+ grunt-base-landing 
+ Gabriel Hubermann | Hubermann.com | Buenosweb.com 
+ e: hubermann@gmail.com 
+2016-09-10 01:09:17 
+ */
+/*
+@primario : #ffde72;
+@contraste-primario : #16110b;
+@secundario : #ec174d;
+@contraste-secundario : #FFF;
+*/
+body {
+  background: #fff;
+  color: #444;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+hr {
+  border-color: #354567;
+  border-width: 3px;
+  max-width: 50px;
+}
+hr.light {
+  border-color: white;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #354567;
+}
+a:hover,
+a:focus {
+  color: #242e45;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.text1 {
+  font-size: 3.75rem;
+  line-height: 4.688rem;
+}
+.text2 {
+  font-size: 3.125rem;
+  line-height: 4.063rem;
+}
+.text3 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 300;
+}
+.text4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.text5 {
+  font-size: 18px;
+  font-weight: 300;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.bg-primary {
+  background-color: #354567;
+}
+.bg-dark {
+  background-color: #fec4ac;
+  color: white;
+}
+.bgwhite {
+  background: #fff;
+}
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+section {
+  padding: 100px 0;
+}
+aside {
+  padding: 50px 0;
+}
+.no-padding {
+  padding: 0;
+}
+/****** HEADER ******/
+#header {
+  margin: 0;
+  padding: 45px 0 0 0;
+}
+.content-header {
+  margin: 60px auto;
+}
+/****** NAVBAR ******/
+body {
+  padding-top: 45px;
+}
+.navbar {
+  padding: 20px 0;
+  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+.navbar-default {
+  background-color: #354567;
+}
+.navbar-brand {
+  font-weight: 300;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #74ddd9;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #e5e5e5;
+  color: #fec4ac;
+}
+/****    MEDIA QUERIES    ****/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/**** INCLUDES ****/
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../../images/demo9.jpg');
+  text-align: center;
+  color: white;
+}
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+header .header-content .header-content-inner p {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#bg-prices {
+  background: #fff;
+}
+#prices-heading {
+  text-align: center;
+  padding: 0.8em;
+}
+.price-item {
+  padding: 0.8em 0;
+}
+.price-item .price {
+  background-color: #354567;
+  color: #22252C;
+  text-align: center;
+  font-weight: 300;
+  padding: 0.8em;
+}
+.price-item .price-heading {
+  text-align: center;
+  color: #22252C;
+  padding: 0.8em;
+}
+.price-item .price-title {
+  padding: 0 0.8em;
+}
+.price-item .price-number {
+  padding: 0.8em;
+  text-align: center;
+  background-color: #74ddd9;
+}
+.price-item .price-title h3 {
+  color: #354567;
+  text-align: center;
+}
+.price-item .price-details {
+  list-style: none;
+  margin: 1em 0;
+}
+.price-item .price-details li {
+  text-align: center;
+  font-weight: 300;
+  margin: 0.8em 0;
+}
+.price-item .button-primary {
+  background: #E14658;
+}
