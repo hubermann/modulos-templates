@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/css/styles.min.css">
 		
+    <script src="vendor/js/modernizr.custom.js"></script>
 
 </head>
 
@@ -40,6 +41,7 @@
                     <li><a class="page-scroll" href="#nosotros">Nosotros</a></li>
                     <li><a class="page-scroll" href="#servicios">Servicios</a></li>
                     <li><a class="page-scroll" href="#prices">Precios</a></li>
+                    <li><a class="page-scroll" href="#works">Trabajos</a></li>
                     <li><a class="page-scroll" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -53,6 +55,12 @@
 		<?php include_once('pages/product.php'); ?>
 
 		<?php include_once('pages/prices.php'); ?>
+
+		<?php include_once('pages/gallery.php'); ?>
+
+    <?php include_once('pages/divider-1.php'); ?>
+
+		<?php include_once('pages/works.php'); ?>
 
 
    <section id="nosotros">
@@ -129,6 +137,8 @@
 
     <!-- Scrolling Nav JavaScript -->
     <script src="vendor/js/jquery.easing.js"></script>
+    
+    <script src="vendor/js/toucheffects.js"></script>
     <script src="dist/js/main.min.js"></script>
 
     

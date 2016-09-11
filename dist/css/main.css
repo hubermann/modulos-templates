@@ -2,7 +2,7 @@
  grunt-base-landing 
  Gabriel Hubermann | Hubermann.com | Buenosweb.com 
  e: hubermann@gmail.com 
-2016-09-10 01:09:17 
+2016-09-11 05:09:27 
  */
 /*
 @primario : #ffde72;
@@ -13,6 +13,147 @@
 body {
   background: #fff;
   color: #444;
+}
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #f2c2c9;
+  color: #a4003a;
+  text-shadow: none;
+}
+::selection {
+  background: #16a085;
+  color: #a4003a;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/* Paragraph & Typographic */
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+.centered {
+  text-align: center;
+}
+.paragraph-lead {
+  font-size: 20px;
+  color: #3498db;
+}
+strong {
+  font-weight: 700;
+}
+em {
+  font-weight: 300;
+}
+pre {
+  background: #ebebeb;
+  border: none;
+  font-family: "Monaco";
+  font-size: 16px;
+  color: #666;
+  padding: 20px;
+  line-height: 28px;
+}
+small {
+  font-size: 12px;
+}
+blockquote,
+blockquote p {
+  line-height: 28px;
+  color: #999;
+  font-weight: 300;
+  font-style: italic;
+}
+blockquote {
+  position: relative;
+  margin: 0 0 40px -30px;
+  padding-left: 30px;
+  border-left: 5px solid #3498db;
+}
+blockquote cite {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  font-size: 12px;
+  font-style: italic;
+  color: #333;
+  font-weight: 300;
+}
+blockquote cite:before {
+  content: "-- ";
+}
+/* Images */
+.overflow-image {
+  margin-top: -65px;
+}
+/* Links */
+a {
+  color: #3498db;
+  word-wrap: break-word;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:hover,
+a:focus {
+  color: #c0392b;
+  text-decoration: none;
+  outline: 0;
+}
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+/* Modal */
+.modal-header {
+  background: #3498db;
+}
+.modal-header h4 {
+  color: white;
+}
+.modal-footer {
+  background: #2b2b2b;
 }
 html,
 body {
@@ -115,8 +256,9 @@ body {
 .navbar-default {
   background-color: #354567;
 }
-.navbar-brand {
+a.navbar-brand {
   font-weight: 300;
+  color: white;
 }
 .navbar-default .navbar-nav > li > a {
   color: #74ddd9;
@@ -246,4 +388,69 @@ header .header-content .header-content-inner p {
 }
 .price-item .button-primary {
   background: #E14658;
+}
+/* Section Dividers */
+.section-divider {
+  z-index: 999;
+  width: 100%;
+  display: table;
+  max-height: 450px;
+  border-bottom: 2px solid #E6EAED;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  margin-top: 45px;
+  background-position: center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: relative;
+  text-align: center;
+}
+.textdivider h1 {
+  padding-top: 70px;
+  color: white;
+  font-size: 40px;
+}
+.textdivider p {
+  color: white;
+  font-size: 25px;
+}
+/* Section Dividers Backgrounds */
+.divider-1 {
+  background-image: url('../../images/demo3.jpg');
+}
+.divider-2 {
+  background-image: url('../../images/demo4.jpg');
+}
+.divider-3 {
+  background-image: url('../../images/demo3.jpg');
+  margin-top: 0px;
+}
+.divider-4 {
+  background-image: url('../../images/demo4.jpg');
+}
+.divider-6 {
+  background-image: url('../../images/demo6.jpg');
+}
+/* Portfolio */
+.portfolio {
+  padding: 50px 0;
+}
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.img-portfolio {
+  margin: 0 auto;
+}
+.img-portfolio:hover {
+  opacity: 0.8;
 }
